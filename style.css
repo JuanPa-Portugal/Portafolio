@@ -1,5 +1,7 @@
 *{
     box-sizing: border-box;
+}
+body{
     margin: 0;
 }
 .container{
@@ -28,9 +30,19 @@ p{
 .container-header nav ul{
     display: flex;
     justify-content:space-around;
-    
 }
-.hero-section{
+.nav-list {
+    text-decoration: none;
+    font-size: 16px;
+    color:#464646;
+}
+#contacto{
+    font-weight: bold;
+}
+/* section hero */
+
+.bg-section{
+    padding: 10px;
     background-color: #f6f2f2;
 
 }
@@ -58,8 +70,179 @@ p{
     color: #464646;
 }
 
-/*abut me*/
-.abutMe-section{
+/* section abaut me*/
+.bgblue-section{
+    padding: 10px;
     background-color:#EAF2FD;
-    height: 383px;
+    height: 550px;
 }
+
+/* section skills and hobbi */
+h3{
+    text-align: center;
+    margin:40px 0;
+    font-size: 32px;
+    font-weight: bold;
+}
+.container-cards{
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skills-cards{
+    display: flex;
+    flex-direction: column;
+    width: 176px;
+    height: 174px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    background-color: #ccdff0;
+    justify-content: flex-end;
+    align-items:initial;
+    padding: 10px;
+    box-shadow: 3px 1px 8px rgba(50,50,50,0.5);
+}
+
+.skills-cards img{
+    max-width: 30px;
+    max-height:40px; 
+    margin-bottom: 10px;
+}
+
+/* formacion academica */
+.proyecto img{
+    padding: 0 10px;
+}
+.card-academicas{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 220px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 3px 1px 8px rgba(50,50,50,0.5);
+    
+}
+.card-img{
+    width: 70%;
+}
+
+.card-text{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.card-año{
+    font-size: 16px;
+    font-weight:lighter;
+
+}
+
+/* proyectos de trabajo */
+
+.proyecto{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.proyecto p{
+    margin-bottom: 20px;
+}
+.btn-repo{
+    border:1px solid #2A7AE4;
+    color: #2A7AE4;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+.btn-demo{
+    border:1px solid #2A7AE4;
+    background-color: #2A7AE4;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right:20px ;
+}
+/* formulario */
+.contacto{
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.form h3{
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: start;
+}
+
+
+  .form {
+    /* background: rgba(6, 33, 59, 0.411); */
+    /* color: rgb(144, 136, 185); */
+    color: #000000;
+   /*  box-shadow: 0 0 6px 0rgba (255, 255, 255, 0.8); */
+    width: 100%;
+    margin-left: 10px;
+  }
+  form .grupo {
+    position: relative;
+    margin: 30px 0;
+  }
+  input,
+  textarea {
+    background: none;
+   /*  color: #c6c6c6; */
+   color: #000000;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+   /*  border: none;
+    border-bottom: 1px solid #ffffff67; */
+    resize: none;
+  }
+  input:focus,
+  textarea:focus {
+    outline: none;
+    /* color: rgb(237, 235, 240); */
+  }
+  input:focus ~ label,
+  input:valid ~ label,
+  textarea:focus ~ label,
+  textarea:valid ~ label {
+    position: absolute;
+    top: -14px;
+    font-size: 16px;
+    color: #2196f3;
+  }
+  label {
+    /* color: #ffffff67; */
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 18px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+  }
+  button {
+    background:#2A7AE4;
+    display: block;
+    width: 120px;
+    height: 40px;
+    border: none;
+    color:white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  footer{
+      height: 100px;
+      text-align: center;
+      margin-top: 40px;
+      background-color: white;
+  }

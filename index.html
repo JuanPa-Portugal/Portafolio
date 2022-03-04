@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Mi Portafolio</title>
 </head>
@@ -15,20 +16,20 @@
             <p> <img src="img/Logo.png" alt="branding personal"> </p>
             <nav>
                 <ul>
-                    <li> <a href="#">Sobre mi</a> </li>
-                    <li> <a href="#">Skills</a> </li>
-                    <li> <a href="#">Hobbies</a> </li>
-                    <li> <a href="#">Formacion</a></li>
-                    <li> <a href="#">Proyectos</a></li>
-                    <li> <a href="">contacto@fulanadetal.com</a></li>
+                    <li> <a class="nav-list" href="#">Sobre mi</a> </li>
+                    <li> <a class="nav-list" href="#">Skills</a> </li>
+                    <li> <a class="nav-list" href="#">Hobbies</a> </li>
+                    <li> <a class="nav-list" href="#">Formacion</a></li>
+                    <li> <a class="nav-list" href="#">Proyectos</a></li>
+                    <li> <a id="contacto" class="nav-list" href="">contacto@fulanadetal.com</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-            <!--hero section-->
-        <section class="hero-section">
+        <!--hero section-->
+        <section class="bg-section">
             <div class="container container-hero">
                 <div>
                     <h2>
@@ -52,39 +53,189 @@
             </div>
         </section>
 
-        <!--about mi-->
+        <!--about mi section-->
 
-        <section class="abutMe-section">
+        <section class="bgblue-section">
             <div class="container ">
                 <h3>Sobre mi</h3>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem praesentium, ut quam, error quisquam quod, illo et autem provident aperiam eum sequi magni minima dolor? Eaque necessitatibus excepturi asperiores?</p>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed similique et natus ad quod iusto rem tenetur, officia explicabo, error ex veritatis debitis suscipit fugit sequi nostrum voluptatum nobis.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem praesentium, ut quam, error
+                    quisquam quod, illo et autem provident aperiam eum sequi magni minima dolor? Eaque necessitatibus
+                    excepturi asperiores?</p><br>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sed similique et natus ad quod
+                    iusto rem tenetur, officia explicabo, error ex veritatis debitis suscipit fugit sequi nostrum
+                    voluptatum nobis.</p>
             </div>
         </section>
         <!--skills section-->
-        <section>
+        <section class="bg-section">
             <div class="container">
                 <h3>Skills</h3>
-                <div class="hard-skills"><img src="img/html.png" alt=""></div>
-                <div class="hard-skills"><img src="img/js.png" alt=""></div>
-                <div class="hard-skills"><img src="img/php.png" alt=""></div>
-                <div class="hard-skills"><img src="img/node.png" alt=""></div>
-                <div class="hard-skills"><img src="img/react.png" alt=""></div>
-                <div class="hard-skills"><img src="img/css-file 1.png" alt=""></div>
-
+                <ul class="container-cards">
+                    <li class="skills-cards">
+                        <img src="img/html.png" alt=" logotipo html">
+                        <p>Html 5</p>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/js.png" alt="logotipo javaScript">
+                        <p>JavaScript</p>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/php.png" alt="logotipo php">
+                        <p>PHP</p>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/node.png" alt="logotipo node js">
+                        <p>Node Js</p>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/react.png" alt="logotipo react">
+                        <p>React</p>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/css-file 1.png" alt="logotipo css">
+                        <p>Css</p>
+                    </li>
+                </ul>
             </div>
+
             <div class="container">
                 <h3>Hobbies</h3>
-                <div class="soft-skills"><img src="img/skateboarding_black_24dp (1) 1.png" alt=""></div>
-                <div class="soft-skills"><img src="img/guitar.png" alt=""></div>
-                <div class="soft-skills"><img src="img/headphones_black_24dp 1.png" alt=""></div>
-                <div class="soft-skills"><img src="img/tv_black_24dp 1.png" alt=""></div>
-                <div class="soft-skills"><img src="img/restaurant_menu_black_24dp 1.png" alt=""></div>
-                <div class="soft-skills"><img src="img/photo_camera_black_24dp 1.png" alt=""></div>
+                <ul class="container-cards">
+                    <li class="skills-cards">
+                        <img src="img/skateboarding_black_24dp (1) 1.png" alt="">
+                        <p>Patinaje</p>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/guitar.png" alt="">
+                        <p>Guitarra</p>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/headphones_black_24dp 1.png" alt="">
+                        <p>Musica</p>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/tv_black_24dp 1.png" alt="">
+                        <p>Cine</p>
+                    </li>
+
+                    <li class="skills-cards">
+                        <img src="img/restaurant_menu_black_24dp 1.png" alt="">
+                        <P>Cocinar</P>
+                    </li>
+                    <li class="skills-cards">
+                        <img src="img/photo_camera_black_24dp 1.png" alt="">
+                        <p>fotografia</p>
+                    </li>
+                </ul>
+        </section>
+        <!--section formacion academica-->
+        <section class="bgblue-section">
+            <h3>Formacion Academica</h3>
+            <div class="container">
+                <ul class="container-cards">
+                    <div>
+                        <li class="card-academicas">
+                            <div class="card-img">
+                                <img src="img/iniv-logo.png" alt="">
+                            </div>
+                        </li>
+                        <h4 class="card-text">Webmaster</h4>
+                        <p class="card-año">UTN 2021</p>
+                    </div>
+                    <div>
+                        <li class="card-academicas">
+                            <div class="card-img">
+                                <img src="img/logo-alura.png" alt="">
+                            </div>
+                        </li>
+                        <h4 class="card-text">Front end dev</h4>
+                        <p class="card-año">Alura 2022</p>
+                    </div>
+                    <div>
+                        <li class="card-academicas">
+                            <div class="card-img">
+                                <img src="img/logo-univ2.png" alt="">
+                            </div>
+                        </li>
+                        <h4 class="card-text">Tecnicatura en programacion</h4>
+                        <p class="card-año">2022-2023</p>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <!--section exp laboral-->
+        <section class="bg-section">
+            <h3>Experiencia profesional</h3>
+            <div class="container">
+                <div class="proyecto">
+                    <img src="img/encriptador.png" alt="captura de pantalla">
+                    <div>
+                        <h4 class="card-text">
+                            Encriptador de texto
+                        </h4>
+                        <p class="card-año">
+                            Challenge Alura codificador
+                        </p>
+                        <a class="btn-repo" href="">repositorio</a>
+                        <a class="btn-demo" href="">ver demo</a>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <div>
+                        <h4 class="card-text">
+                            juego del ahorcado creado con Html css y JavaScript
+                        </h4>
+                        <p class="card-año">
+                            Challenge oracle
+                        </p>
+                        <a class="btn-repo" href="">repositorio</a>
+                        <a class="btn-demo" href="">ver demo</a>
+                    </div>
+                    <img src="img/ahorcado.png" alt="captura del juego">
+                </div>
             </div>
         </section>
 
+        <!--section contacto-->
+        <section class="bgblue-section">
+            <div class="container contacto">
+                
+                    <img src="img/unsplash_contacto.png" alt="imagen de un telefono">
+                <form action="https://formspree.io/f/mjvjnwkq" method="POST">
+                  <div class="form">
+                    <h3>Contacto</h3>
+                    <p>¿quieres contactarme?</p>
+                    <p>complete el siguiente formulario y me pondre en contacto con usted lo antes posible</p>
+                    <div class="grupo">
+                      <input type="text" name="name" id="username" required>
+                      <label for="username">Nombre</label>
+                    </div>
+                    <div class="grupo">
+                      <input type="email" name="_replyto" id="email" required>
+                      <label for="email">Email</label>
+                    </div>
+                    <div class="grupo">
+                        <input type="text" name="name" id="username" required>
+                        <label for="username">Asunto</label>
+                      </div>
+                    <div class="grupo">
+                      <textarea name="message" id="text" rows="3" required></textarea>
+                      <label for="text">Deja tu mensaje</label>
+                    </div>
+                    <button type="submit">contactar</button>
+                  </div>
+                </form>
+            </div>
+            <div class="form-container">
+            </div>
+
+        </section>
     </main>
+  
+    <footer>
+        <h4> &copy Desarrolado por Juan Pablo Ayoroa Portugal</h4>
+        <p>2022</p>
+    </footer>
 
 
 </body>
