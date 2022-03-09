@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <title>Mi Portafolio</title>
 </head>
 
@@ -47,7 +50,7 @@
                         <a href="#"><img src="img/Cv.png" alt=""></a>
                     </div>
                 </div>
-                <div>
+                <div class="perfil-hero">
                     <img src="img/unsplash_anAAZ0nrqBY.png" alt="foto perfil">
                 </div>
             </div>
@@ -56,7 +59,7 @@
         <!--about mi section-->
 
         <section class="bgblue-section">
-            <div class="container ">
+            <div class="container aboutme">
                 <h3>Sobre mi</h3>
                 <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quidem praesentium, ut quam, error
                     quisquam quod, illo et autem provident aperiam eum sequi magni minima dolor? Eaque necessitatibus
@@ -169,23 +172,24 @@
             <div class="container">
                 <div class="proyecto">
                     <img src="img/encriptador.png" alt="captura de pantalla">
-                    <div>
+                    <div class="proyecto-content">
                         <h4 class="card-text">
                             Encriptador de texto
                         </h4>
-                        <p class="card-año">
+                        <p >
                             Challenge Alura codificador
                         </p>
                         <a class="btn-repo" href="">repositorio</a>
                         <a class="btn-demo" href="">ver demo</a>
                     </div>
                 </div>
-                <div class="proyecto">
-                    <div>
+                <div class="proyecto proyecto-inverso">
+                    <div class="proyecto-content">
                         <h4 class="card-text">
-                            juego del ahorcado creado con Html css y JavaScript
+                            juego del ahorcado <br>
+                            creado con html css Js
                         </h4>
-                        <p class="card-año">
+                        <p >
                             Challenge oracle
                         </p>
                         <a class="btn-repo" href="">repositorio</a>
@@ -199,9 +203,8 @@
         <!--section contacto-->
         <section class="bgblue-section">
             <div class="container contacto">
-                
                     <img src="img/unsplash_contacto.png" alt="imagen de un telefono">
-                <form action="https://formspree.io/f/mjvjnwkq" method="POST">
+                <form >
                   <div class="form">
                     <h3>Contacto</h3>
                     <p>¿quieres contactarme?</p>
@@ -226,9 +229,6 @@
                   </div>
                 </form>
             </div>
-            <div class="form-container">
-            </div>
-
         </section>
     </main>
   

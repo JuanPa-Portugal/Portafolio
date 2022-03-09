@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 body{
+    font-family: 'Raleway', sans-serif;
     margin: 0;
 }
 .container{
@@ -14,6 +15,8 @@ h3{
 p{
     font-size: 16px;
 }
+
+/* header */
 .container-header{
     display: flex;
     justify-content: space-between;
@@ -29,7 +32,7 @@ p{
 }
 .container-header nav ul{
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
 }
 .nav-list {
     text-decoration: none;
@@ -39,12 +42,38 @@ p{
 #contacto{
     font-weight: bold;
 }
+/* responsive header */
+@media screen and (max-width: 480px){
+    .container-header{
+        height: 200px;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .container-header p{
+        width: 100%; 
+    }
+    .container-header nav{
+        width: 100%;
+    }
+    .container-header nav ul{
+        flex-direction: column;
+        text-align: center;
+       margin-bottom: 10px;
+    }
+    .container-header nav ul li{
+        margin-bottom: 5px;
+    }
+}
 /* section hero */
-
 .bg-section{
     padding: 10px;
     background-color: #f6f2f2;
-
+}
+.perfil-hero{
+    width:60%;
+}
+.perfil-hero img{
+    max-width: 100%;
 }
 .container-hero{
     display: flex;
@@ -68,13 +97,52 @@ p{
 .icons a img{
     width: 60px;
     color: #464646;
+    max-height: 550px;
 }
+
+@media screen and (max-width: 480px){
+
+    .container-hero {
+        flex-direction: column-reverse;
+        height: 400px;
+    }    
+    .container-hero h2{
+        font-size: 22px; 
+        text-align: center;
+    }
+    .container-hero p{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .perfil-hero{
+        max-width:40%;
+        margin-bottom: 10px;
+    }
+    .perfil-hero img{
+        width: 100%;
+        padding: 2px;
+    }
+    .icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+  }
 
 /* section abaut me*/
 .bgblue-section{
     padding: 10px;
     background-color:#EAF2FD;
-    height: 550px;
+}
+
+/* responsive area */
+@media screen and (max-width: 480px){
+    .aboutme p{
+        text-align: center;
+        font-size: 18px;
+        color: #464646;
+    }
 }
 
 /* section skills and hobbi */
@@ -85,7 +153,7 @@ h3{
     font-weight: bold;
 }
 .container-cards{
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
     flex-wrap: wrap;
 }
@@ -124,6 +192,7 @@ h3{
     border-radius: 8px;
     box-shadow: 3px 1px 8px rgba(50,50,50,0.5);
     
+    
 }
 .card-img{
     width: 70%;
@@ -137,6 +206,7 @@ h3{
 .card-año{
     font-size: 16px;
     font-weight:lighter;
+    margin-bottom: 30px;
 
 }
 
@@ -150,6 +220,7 @@ h3{
 .proyecto p{
     margin-bottom: 20px;
 }
+
 .btn-repo{
     border:1px solid #2A7AE4;
     color: #2A7AE4;
@@ -157,6 +228,7 @@ h3{
     text-decoration: none;
     padding: 10px 15px;
     margin-right: 20px;
+    display: inline-block;
 }
 .btn-demo{
     border:1px solid #2A7AE4;
@@ -166,24 +238,49 @@ h3{
     text-decoration: none;
     padding: 10px 15px;
     margin-right:20px ;
+    display: inline-block;
 }
+
+/* responsive proyectos de trabajo*/
+@media screen and (max-width: 480px){
+    .proyecto{
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+    .proyecto-inverso{
+        flex-direction: column-reverse;
+    }
+    .proyecto img{
+        width: 90%;
+    }
+    .proyecto-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn-repo{
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .btn-demo{
+        text-align: center;
+    }
+}
+   
+
 /* formulario */
 .contacto{
-    height: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
+    height: 100%;
+    margin: 0 auto;
 }
 .form h3{
     margin-top: 0;
     margin-bottom: 20px;
     text-align: start;
 }
-
-
   .form {
-    /* background: rgba(6, 33, 59, 0.411); */
-    /* color: rgb(144, 136, 185); */
     color: #000000;
    /*  box-shadow: 0 0 6px 0rgba (255, 255, 255, 0.8); */
     width: 100%;
@@ -216,7 +313,7 @@ h3{
   textarea:focus ~ label,
   textarea:valid ~ label {
     position: absolute;
-    top: -14px;
+    top: -18px;
     font-size: 16px;
     color: #2196f3;
   }
@@ -240,6 +337,30 @@ h3{
     font-size: 16px;
     cursor: pointer;
   }
+/* responsive contacto */
+@media screen and (max-width: 480px) {
+    .contacto{
+        flex-direction: column;
+    }
+    .contacto img{
+        display: none;
+    }
+    .form{
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .form h3{
+        text-align: center;
+    }
+    form p{
+        text-align: center;
+    }
+    .grupo button{
+        align-items: center;
+    }
+    
+}
   footer{
       height: 100px;
       text-align: center;
